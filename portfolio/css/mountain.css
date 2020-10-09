@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Indie Flower', cursive;
+    background-color: gray;
+
+}
+
+.main-container {
+    position: relative;
+    height: 600px;
+    width: 600px;
+    margin: 0 auto;
+    border: 1px solid wheat;
+    text-align: center;
+    background-color: rgb(67, 184, 238);
+}
+
+.mountain {
+    display: block;
+    position: absolute;
+    width: 500px;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text {
+    color: wheat;
+    font-size: 2.5rem;
+    position: absolute;
+    bottom: 5%;
+    left: 0;
+    width: 100%;
+}
+
+.cloud1 {
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    animation-name: cloud1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.cloud2 {
+    position: absolute;
+    top: 2.5%;
+    left: 40%;
+    animation-name: cloud2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.cloud3 {
+    position: absolute;
+    top: 25%;
+    right: 5%;
+    animation-name: cloud3;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes cloud1 {
+    0% {left: 5%; top: 15%}
+    25% {left: 6%; top: 16%}
+    50% {left: 5%; top: 14%}
+    75% {left: 5%; top: 13%}
+    100% {left: 5%; top: 15%}
+}
+
+@keyframes cloud2 {
+    0% {left: 40%; top: 2.5%}
+    25% {left: 43%; top: 3.5%}
+    50% {left: 40%; top: 1.5%}
+    75% {left: 40%; top: 0.5%}
+    100% {left: 40%; top: 2.5%}
+}
+
+@keyframes cloud3 {
+    0% {right: 5%; top: 25%}
+    25% {right: 6%; top: 26%}
+    50% {right: 5%; top: 24%}
+    75% {right: 5%; top: 23%}
+    100% {right: 5%; top: 25%}
+}
